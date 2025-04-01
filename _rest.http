@@ -1,0 +1,13 @@
+@hostname=xxxxx.openai.azure.com
+@api_version=2025-03-01-preview
+@api_key=xxxxxx
+
+POST /openai/responses?api-version={{api_version}}
+Host: {{hostname}}:443
+Content-Type: application/json
+api-key: {{api_key}}
+
+{
+    "model": "omni",
+    "input": "This is a test"
+}
